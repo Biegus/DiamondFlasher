@@ -13,8 +13,6 @@ using System.CodeDom.Compiler;
 #pragma warning disable IDE0060
 namespace DiamondFlasher
 {
-
-
     class MainContextCommands
     {
         private const string LOAD_FILE_MODE_DESCR = "?0->key-value 1->value-key 2->both";
@@ -149,7 +147,6 @@ namespace DiamondFlasher
             {
                 ConsoleHelper.WriteLine("Nothing has matched", Styles.Information);
             }
-            ;
         }
 
         [ContextMethod(typeof(MainContext), "add_manually",
@@ -265,7 +262,6 @@ namespace DiamondFlasher
         }
 
         [ContextMethod(typeof(Context), "help")]
-
         public static void ShowCommands(string[] arguments, Context context)
 
         {
@@ -283,9 +279,6 @@ namespace DiamondFlasher
               .ToString();
             ConsoleHelper.Write(text);
         }
-       
-
-
     }
 
 }

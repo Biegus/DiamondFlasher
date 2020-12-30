@@ -5,15 +5,10 @@ using System.Text;
 
 namespace DiamondFlasher.Helpers
 {
-
-
-
-
 	public interface IReadonlySet<T> : IReadOnlyCollection<T>, IEnumerable<T>
 	{
 		bool Contains(T item);
 	}
-	
 	public class ReadOnlySet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnlyCollection<T>, ICollection, ISet<T>, IReadonlySet<T>
 	{
 		protected ISet<T> collection;
@@ -31,11 +26,8 @@ namespace DiamondFlasher.Helpers
 		{
 			return collection.Contains(element);
 		}
-
 		int ICollection<T>.Count => Count;
 		bool ICollection<T>.IsReadOnly => true;
-
-
 		public IEnumerator<T> GetEnumerator()
 		{
 			foreach (var item in collection)
@@ -122,7 +114,6 @@ namespace DiamondFlasher.Helpers
 		void ISet<T>.SymmetricExceptWith(IEnumerable<T> other) => throw new NotImplementedException();
 
 		void ISet<T>.UnionWith(IEnumerable<T> other) => throw new NotImplementedException();
-		
 
 	}
 
