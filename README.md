@@ -6,9 +6,11 @@ That is a simple console application to use as flashcards.
 
 ## Basic rules
 
-You are (almost) always in certain context. You can check commands available by typing "help".
-Arguments should by wrap in *"*.
-Arguments that description starts with *?* are optional.
+You are (almost) always in certain context. You can check commands available by typing *help*
+
+Arguments should by wrap in *"*
+
+Arguments that description starts with *?* are optional
 
 ## How to use
 
