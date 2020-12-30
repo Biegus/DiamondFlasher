@@ -16,7 +16,7 @@ Arguments that description starts with *?* are optional
 
 1. First of all, you need to load some flashcards. There're various ways for doing it.
 
--Use *parse_raw* and then type or past all flashcards. Split key and value with "-". Empty line means end.
+-Use *parse_raw* and then type or past all flashcards. Split keys and values with "-". Empty line means end.
 
 -Use *load_file*. In that case you have to specify the file name. Optionaly you can change spliter ("-" by default).
 
@@ -28,6 +28,5 @@ Arguments that description starts with *?* are optional
 
 4. After session ends, you are in the **EndOfSessionContext**. If you want to go back, add some flashcards, or just start session again, type *exit_context*.
 However, you can do some interesting stuffs while in **EndOfSessionContext**:
-
 You can unload words, that you got right first time by using *unload_perfects*. You can also start specialized session, with only words that made you struggle by *next_without_perfects*.
 
