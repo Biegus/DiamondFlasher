@@ -30,3 +30,7 @@ Arguments that description starts with *?* are optional
 However, you can do some interesting stuff while in **EndOfSessionContext**:
 You can unload words, that you got right first time by using *unload_perfects*. You can also start specialized session, with only words that made you struggle by *next_without_perfects*.
 
+## Credits
+
+Created and programmed by Biegus (Michał Biegaj). 
+Thanks for the  TheMatiaz0 for helping with small language issues
