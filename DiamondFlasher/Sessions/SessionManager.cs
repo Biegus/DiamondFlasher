@@ -23,8 +23,8 @@ namespace DiamondFlasher
             List<Flashcard> toLearn = onStart.ToList();
             
 
-            ConsoleHelper.WriteLine($"-----Session----\n<{Styles.Information}>Type</color><{Styles.Command}> _</color><{Styles.Information}> to get access to commands</color>\n" +
-                $"<{Styles.Information}>Type</color><{Styles.Command}>_y</color> <{Styles.Information}>if you're sure you know answer for sure, and you don't need to type it </color>\n" +
+            ConsoleHelper.WriteLine($"-----Session----\n<{Styles.Information}>Type</color><{Styles.Command}> _</color><{Styles.Information}> to get access to all commands</color>\n" +
+                $"<{Styles.Information}>Type</color><{Styles.Command}>_y</color> <{Styles.Information}>if you're sure you know the answer for sure, and you don't need to type it </color>\n" +
                 $"<{Styles.Information}>Type</color><{Styles.Command}>_n</color> <{Styles.Information}>if you're sure you don't know the answer</color> ");
             IEnumerable<ReadOnlyFlashcardResult> Prepare()
             {
@@ -68,7 +68,7 @@ namespace DiamondFlasher
                 bool correctAnswer = false;
                 if (line.Equals(flashcard.Answer, StringComparison.InvariantCultureIgnoreCase))
                 {
-                    ConsoleHelper.WriteLine("You wrote exactly what answer was", Styles.Information);
+                    ConsoleHelper.WriteLine("You wrote the correct answer", Styles.Information);
                    
                     correctAnswer = true;
                 }
@@ -81,7 +81,7 @@ namespace DiamondFlasher
                        
                         bool wasCorrectOption;
                         bool forceContinue = false;
-                        ConsoleHelper.WriteLine($"<{Styles.QuestionToUser}>Was your correct?</color>\n" +
+                        ConsoleHelper.WriteLine($"<{Styles.QuestionToUser}>Was your answer correct?</color>\n" +
                         $"<{Styles.Command}>y:yes\nn:no</color>");
                         do
                         {
