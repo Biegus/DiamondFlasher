@@ -20,11 +20,11 @@ Arguments that description starts with *?* are optional
 
 1. First of all, you need to load some flashcards. There are various ways of doing it.
 
--Use *parse_raw* and then type or past all flashcards. Split keys and values with "-". Empty line means end.
+- Use *parse_raw* and then type or past all flashcards. Split keys and values with "-". Empty line means end.
 
--Use *load_file*. In that case you have to specify the file name. Optionally you can change splitter ("-" by default).
+- Use *load_file*. In that case you have to specify the file name. Optionally you can change splitter ("-" by default).
 
--Use *load_all_file* or *load_file_desktop*, they are much more specfied ways for loading files.
+- Use *load_all_file* or *load_file_desktop*, they are much more specfied ways for loading files.
 
 2. When you are done adding, if you want to invert keys and values you can use *invert*
 
