@@ -72,7 +72,7 @@ namespace DiamondFlasher
                 {
                     if(split.Length-1<value.attribute.MinimumArguments)
                     {
-                        ConsoleHelper.WriteLine($"This command reguires at least {value.attribute.MinimumArguments} arguments", Styles.BadInformation);
+                        ConsoleHelper.WriteLine($"This command requires at least {value.attribute.MinimumArguments} arguments", Styles.BadInformation);
                         continue;
                     }
                     Regex regex = new Regex("(?<=\").*?(?=\")");
@@ -101,7 +101,7 @@ namespace DiamondFlasher
                         }
                         catch(TargetInvocationException e)
                         {
-                            ConsoleHelper.Write($"Error occured when trying to do ",Styles.BadInformation);
+                            ConsoleHelper.Write($"An error occurred when trying to do ",Styles.BadInformation);
                             ConsoleHelper.WriteLine($"{e.InnerException.Message}", Styles.Error);
                         }
                        
@@ -110,7 +110,7 @@ namespace DiamondFlasher
                 }
                 else
                 {
-                    ConsoleHelper.WriteLine($"Uknown command, type <{Styles.Command}>help</color> to see available commands",Styles.BadInformation);
+                    ConsoleHelper.WriteLine($"Unknown command, type <{Styles.Command}>help</color> to see all available commands",Styles.BadInformation);
                 }
 
             } while (input==null&&contexts.Contains(typeof(T)));
