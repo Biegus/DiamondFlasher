@@ -17,7 +17,7 @@ namespace DiamondFlasher.Sessions
                 context.MainContext.WordsBank.Remove(item);
             }
             if (!any)
-                ConsoleHelper.WriteLine("There's no flashcards matching",Styles.Information);
+                ConsoleHelper.WriteLine("There are no flashcards matching",Styles.Information);
            
         }
         [ContextMethod(typeof(EndOfSessionContext), "next_without_perfects", MinimumArguments = 0)]
