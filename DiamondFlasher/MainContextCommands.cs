@@ -42,10 +42,10 @@ namespace DiamondFlasher
                 "0" => FlashCardLoader.LoadFlags.Default,
                 "1" => FlashCardLoader.LoadFlags.Invert,
                 "2" => FlashCardLoader.LoadFlags.Both,
-                _ => throw new ArgumentException("Uknown value as third argument")
+                _ => throw new ArgumentException("Unknown value as the third argument")
             };
             context.WordsBank.Add(FlashCardLoader.LoadFromFile(GetArguments(0), GetArguments(1, "-"), loadMode));
-            ConsoleHelper.WriteLine($"Correctly loaded {context.WordsBank.Flashcards.Count - countBefore } flashcards from {arguments[0]}", Styles.Information);
+            ConsoleHelper.WriteLine($"Successfully loaded {context.WordsBank.Flashcards.Count - countBefore } flashcards from {arguments[0]}", Styles.Information);
 
         }
         [ContextMethod(typeof(MainContext), "load_all_file",
@@ -227,7 +227,7 @@ namespace DiamondFlasher
         {
             if(context.WordsBank.Flashcards.Any()==false)
             {
-                ConsoleHelper.WriteLine("There's no any flashcard yet",Styles.Information);
+                ConsoleHelper.WriteLine("There are no flashcard added yet",Styles.Information);
                 return;
             }
             ConsoleHelper.WriteLine("All flashcards:", Styles.Information);
