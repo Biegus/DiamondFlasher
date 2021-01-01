@@ -4,6 +4,10 @@ A simple console application to use as flashcards.
 
 ![](https://github.com/Biegus/DiamondFlasher/blob/main/Images/Main.png)
 
+## Download executable
+
+You can download the executable from here https://github.com/Biegus/DiamondFlasher/releases/tag/1.0
+
 ## Basic rules
 
 You are (almost) always in certain context. You can check commands available by typing *help*
